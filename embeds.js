@@ -104,6 +104,13 @@ function quoteAuthorNotFound(author) {
 		.setDescription('No quotes found by this author!');
 }
 
+function leaderboardQuotes(limit, people) {
+	return new EmbedBuilder()
+		.setColor(Colors.Green)
+		.setTitle(`Leaderboard - Top ${limit} Quotes`)
+		.setFields()
+}
+
 module.exports = {
 	permissionErrorEmbed,
 	errorEmbed,
